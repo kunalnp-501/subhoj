@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification - Subhoj Ladoos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="hero-header compact">
+        <div class="logo-container">
+            <h1>SUBHOJ Ladoos</h1>
+        </div>
+    </header>
+
+    <main class="container center-box">
+        <div class="card">
+            <h2>Verify Phone Number</h2>
+            <p>Enter the 4-digit OTP sent to <span id="display-phone">your phone</span>.</p>
+            <p class="hint-text">(Demo OTP is: <strong>1234</strong>)</p>
+            
+            <form id="otp-form">
+                <div class="otp-inputs">
+                    <input type="text" maxlength="1" class="otp-box" required autofocus>
+                    <input type="text" maxlength="1" class="otp-box" required>
+                    <input type="text" maxlength="1" class="otp-box" required>
+                    <input type="text" maxlength="1" class="otp-box" required>
+                </div>
+                <div id="otp-error" class="error-msg"></div>
+                <button type="submit" class="btn btn-primary">Verify OTP</button>
+            </form>
+            <p class="resend-text">Didn't receive code? <a href="#" id="resend-btn">Resend OTP</a></p>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

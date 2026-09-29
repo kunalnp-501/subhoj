@@ -2,104 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Diwali Food Items for Sale in Mumbai</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; background: #fff8f0; margin: 0; padding: 0; }
-        header { background: #ffcc80; padding: 20px; text-align: center; }
-        h1 { color: #d84315; }
-        .container { width: 90%; margin: 20px auto; }
-        .category { margin-bottom: 35px; }
-        .item { 
-            background: #ffe0b2; border-radius: 8px; 
-            padding: 1em; margin-bottom: 1em; 
-            display: flex; 
-        }
-        .item img { width: 100px; height: 100px; border-radius: 8px; margin-right: 15px; }
-        .item-details { flex: 1; }
-        .order-btn { background: #d84315; color: #fff; border: none; padding: 6px 16px; border-radius: 4px; cursor: pointer; }
-        footer { background: #ffcc80; padding: 10px; text-align: center; }
-    </style>
+    <title>Subhoj Ladoos - Pure Ghee Sweets & Snacks</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Diwali Food Items – Mumbai</h1>
-        <p>Traditional Indian sweets and snacks for festive celebrations. Fresh, homemade & authentic!</p>
+    <header class="hero-header">
+        <div class="logo-container">
+            <h1>SUBHOJ Ladoos</h1>
+            <p class="tagline">Made with Love, Shared with Joy</p>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Full Menu</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
     </header>
-    <div class="container">
-        <div class="category">
-            <h2>Sweets</h2>
-            <div class="item">
-                <img src="images/motichoor_ladoo.jpg" alt="Motichoor Ladoo">
-                <div class="item-details">
-                    <h3>Motichoor Ladoo</h3>
-                    <p>Plump and rich besan ladoos made with pure ghee, garnished with pistachio. <br>Price: ?400/kg</p>
-                    <p>Seller: Sweet Traditions, Andheri</p>
-                    <button class="order-btn">Order Now</button>
-                </div>
+
+    <main class="container">
+        <section class="landing-banner">
+            <div class="hero-image-container">
+                <img src="images/subhoj-logo.jpeg" alt="Subhoj Ladoos - Made with Love, Shared with Joy" class="landing-hero-img">
             </div>
-            <div class="item">
-                <img src="images/kaju_katli.jpg" alt="Kaju Katli">
-                <div class="item-details">
-                    <h3>Kaju Katli</h3>
-                    <p>Creamy cashew fudge, a Diwali favorite. <br>Price: ?650/kg</p>
-                    <p>Seller: Mithaiwala, Borivali</p>
-                    <button class="order-btn">Order Now</button>
-                </div>
+            <div class="welcome-action">
+                <h2>Authentic Maharashtrian Sweets & Snacks</h2>
+                <p>Prepared in pure desi ghee, jaggery, and rice bran oil.</p>
+                <a href="products.html" class="btn btn-primary">Explore Menu & Order Now</a>
             </div>
-        </div>
-        <div class="category">
-            <h2>Snacks</h2>
-            <div class="item">
-                <img src="images/chivda.jpg" alt="Chivda">
-                <div class="item-details">
-                    <h3>Chivda</h3>
-                    <p>Crunchy poha mixture with peanuts and spices. <br>Price: ?220/kg</p>
-                    <p>Seller: HomeMakers Kitchen, Bandra</p>
-                    <button class="order-btn">Order Now</button>
-                </div>
+        </section>
+
+        <section class="quick-highlights">
+            <div class="highlight-card">
+                <h3>Pure Desi Ghee</h3>
+                <p>Traditional recipes crafted with premium pure ghee and jaggery.</p>
             </div>
-            <div class="item">
-                <img src="images/shankarpali.jpg" alt="Shankarpali">
-                <div class="item-details">
-                    <h3>Shankarpali</h3>
-                    <p>Sweet, crispy flour bites, perfect for snacking. <br>Price: ?160/kg</p>
-                    <p>Seller: Aunty's Snacks, Dadar</p>
-                    <button class="order-btn">Order Now</button>
-                </div>
+            <div class="highlight-card">
+                <h3>Fresh Delivery</h3>
+                <p>Serving across Mumbai, Thane, Palghar, Alibaug, Nashik, and Pune.</p>
             </div>
-        </div>
-        <div class="category">
-            <h2>Combo Packs</h2>
-            <div class="item">
-                <img src="images/diwali_combo.jpg" alt="Diwali Combo">
-                <div class="item-details">
-                    <h3>Diwali Special Combo</h3>
-                    <p>Mix of ladoo, chivda, chakli & karanji. <br>Price: ?900/box</p>
-                    <p>Seller: Festive Feast, Chembur</p>
-                    <button class="order-btn">Order Now</button>
-                </div>
+            <div class="highlight-card">
+                <h3>Authentic Taste</h3>
+                <p>Handcrafted sweets and festive snacks made to perfection.</p>
             </div>
-        </div>
-        <div class="category">
-            <h2>Contact & Orders</h2>
-            <form>
-                <label for="name">Your Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="item">Food Item:</label><br>
-                <input type="text" id="item" name="item"><br>
-                <label for="qty">Quantity:</label><br>
-                <input type="text" id="qty" name="qty"><br>
-                <label for="location">Delivery Location (Mumbai):</label><br>
-                <input type="text" id="location" name="location"><br>
-                <label for="contact">Contact Number:</label><br>
-                <input type="text" id="contact" name="contact"><br>
-                <button type="submit" class="order-btn">Place Order</button>
-            </form>
-        </div>
-    </div>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2025 Diwali Foods Mumbai | For seller partnership, contact orders@subhoj.in</p>
+        <p>&copy; 2026 Subhoj Ladoos. Contact: Ashlesha Joshi</p>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
