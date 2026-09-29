@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart & Order Summary - Subhoj Ladoos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="hero-header compact">
+        <div class="logo-container">
+            <h1>SUBHOJ Ladoos</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="products.html">Back to Menu</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Order Summary</h2>
+        <div id="cart-items-container">
+            <!-- Filled via JS -->
+        </div>
+
+        <div class="order-summary-box">
+            <h3>Delivery Address</h3>
+            <p id="summary-address">-</p>
+            <hr>
+            <h3>Total Amount: <span id="summary-total">₹0</span></h3>
+            <button id="proceed-payment-btn" class="btn btn-primary">Proceed to Payment</button>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

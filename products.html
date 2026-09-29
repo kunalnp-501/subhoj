@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - Subhoj Ladoos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="hero-header compact">
+        <div class="logo-container">
+            <h1>SUBHOJ Ladoos</h1>
+            <p class="tagline">Pure Ghee Ladoos & Festive Menu</p>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Full Menu</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Pure Ghee Ladoos Catalog</h2>
+        <p class="section-desc">Made in pure desi ghee, jaggery and rice bran oil.</p>
+
+        <div id="product-list" class="product-grid">
+            <!-- Dynamically populated via JS -->
+        </div>
+
+        <section class="customer-form-section">
+            <h3>Customer Verification & Details</h3>
+            <form id="customer-form">
+                <div class="form-group">
+                    <label>First Name *</label>
+                    <input type="text" id="firstName" required placeholder="Rahul">
+                </div>
+                <div class="form-group">
+                    <label>Last Name *</label>
+                    <input type="text" id="lastName" required placeholder="Patil">
+                </div>
+                <div class="form-group">
+                    <label>Email ID *</label>
+                    <input type="email" id="email" required placeholder="rahul@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number *</label>
+                    <input type="tel" id="phone" required placeholder="9876543210" pattern="[0-9]{10}">
+                </div>
+                <button type="submit" class="btn btn-primary">Proceed & Send OTP</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Subhoj Ladoos. Contact: Ashlesha Joshi</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
